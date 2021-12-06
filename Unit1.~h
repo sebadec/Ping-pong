@@ -9,6 +9,7 @@
 #include <Forms.hpp>
 #include <ExtCtrls.hpp>
 #include <Graphics.hpp>
+#include <Menus.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -24,6 +25,15 @@ __published:	// IDE-managed Components
         TTimer *Paddle_Right_Down;
         TLabel *Label1;
         TButton *Button1;
+        TLabel *Label2;
+        TLabel *Label3;
+        TButton *Button2;
+        TButton *Button3;
+        TRadioButton *RadioButton1;
+        TRadioButton *RadioButton2;
+        TRadioButton *RadioButton3;
+        TCheckBox *CheckBox1;
+        TCheckBox *CheckBox2;
         void __fastcall Timer_BallTimer(TObject *Sender);
         void __fastcall Paddle_Left_UpTimer(TObject *Sender);
         void __fastcall FormKeyDown(TObject *Sender, WORD &Key,
@@ -34,6 +44,10 @@ __published:	// IDE-managed Components
         void __fastcall Paddle_Right_UpTimer(TObject *Sender);
         void __fastcall Paddle_Right_DownTimer(TObject *Sender);
         void __fastcall Button1Click(TObject *Sender);
+        void __fastcall Button2Click(TObject *Sender);
+        void __fastcall Button3Click(TObject *Sender);
+        void __fastcall CheckBox1Click(TObject *Sender);
+        void __fastcall CheckBox2Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);

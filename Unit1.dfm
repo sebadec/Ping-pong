@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = -1229
-  Top = 110
-  Width = 921
-  Height = 661
+  Left = -1258
+  Top = 71
+  Width = 958
+  Height = 581
   Caption = 'Form1'
   Color = clBtnFace
   UseDockManager = True
@@ -20,14 +20,14 @@ object Form1: TForm1
   object Background_Board: TShape
     Left = 0
     Top = 0
-    Width = 905
-    Height = 622
+    Width = 942
+    Height = 542
     Align = alClient
     Brush.Color = cl3DDkShadow
   end
   object Ball: TImage
-    Left = 216
-    Top = 400
+    Left = 64
+    Top = 72
     Width = 32
     Height = 32
     AutoSize = True
@@ -138,7 +138,7 @@ object Form1: TForm1
   end
   object Paddle_Left: TImage
     Left = 24
-    Top = 152
+    Top = 176
     Width = 20
     Height = 200
     AutoSize = True
@@ -524,8 +524,8 @@ object Form1: TForm1
     Transparent = True
   end
   object Paddle_Right: TImage
-    Left = 840
-    Top = 152
+    Left = 896
+    Top = 168
     Width = 20
     Height = 200
     AutoSize = True
@@ -913,25 +913,146 @@ object Form1: TForm1
   object Label1: TLabel
     Left = 240
     Top = 144
-    Width = 94
-    Height = 37
-    Caption = 'Label1'
+    Width = 433
+    Height = 65
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Zagrajmy w PingPonga!'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -32
     Font.Name = 'MS Sans Serif'
     Font.Style = []
     ParentFont = False
+    Layout = tlCenter
+    Visible = False
+  end
+  object Label2: TLabel
+    Left = 240
+    Top = 232
+    Width = 433
+    Height = 33
+    Alignment = taCenter
+    AutoSize = False
+    Caption = '0:0'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    Layout = tlCenter
+    Visible = False
+  end
+  object Label3: TLabel
+    Left = 240
+    Top = 272
+    Width = 433
+    Height = 33
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Ilosc odbic:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    Layout = tlCenter
     Visible = False
   end
   object Button1: TButton
-    Left = 248
-    Top = 312
-    Width = 75
-    Height = 25
-    Caption = 'Button1'
+    Left = 240
+    Top = 376
+    Width = 433
+    Height = 49
+    BiDiMode = bdRightToLeft
+    Caption = 'Nowa gra'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentBiDiMode = False
+    ParentFont = False
     TabOrder = 0
     OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 240
+    Top = 320
+    Width = 433
+    Height = 49
+    BiDiMode = bdRightToLeft
+    Caption = 'Nastepna runda'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentBiDiMode = False
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 240
+    Top = 432
+    Width = 433
+    Height = 49
+    BiDiMode = bdRightToLeft
+    Caption = 'Opcje'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentBiDiMode = False
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object RadioButton1: TRadioButton
+    Left = 288
+    Top = 56
+    Width = 113
+    Height = 17
+    Caption = 'RadioButton1'
+    TabOrder = 3
+  end
+  object RadioButton2: TRadioButton
+    Left = 288
+    Top = 80
+    Width = 113
+    Height = 17
+    Caption = 'RadioButton2'
+    TabOrder = 4
+  end
+  object RadioButton3: TRadioButton
+    Left = 288
+    Top = 104
+    Width = 113
+    Height = 17
+    Caption = 'RadioButton3'
+    TabOrder = 5
+  end
+  object CheckBox1: TCheckBox
+    Left = 424
+    Top = 56
+    Width = 97
+    Height = 17
+    Caption = 'CheckBox1'
+    TabOrder = 6
+    OnClick = CheckBox1Click
+  end
+  object CheckBox2: TCheckBox
+    Left = 424
+    Top = 104
+    Width = 97
+    Height = 17
+    Caption = 'CheckBox2'
+    TabOrder = 7
+    OnClick = CheckBox2Click
   end
   object Timer_Ball: TTimer
     Interval = 1
