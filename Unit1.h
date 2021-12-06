@@ -31,7 +31,6 @@ __published:	// IDE-managed Components
         TButton *Button3;
         TRadioButton *RadioButton1;
         TRadioButton *RadioButton2;
-        TRadioButton *RadioButton3;
         TCheckBox *CheckBox1;
         TCheckBox *CheckBox2;
         void __fastcall Timer_BallTimer(TObject *Sender);

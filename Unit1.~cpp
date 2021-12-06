@@ -348,9 +348,9 @@ void __fastcall TForm1::Button3Click(TObject *Sender)
 void __fastcall TForm1::CheckBox1Click(TObject *Sender)
 {
      if (CheckBox2->Checked == true) CheckBox2->Checked = false;
-     sleep(1);
+     sleep(0.5);
      CheckBox1->Checked = true;
-     sleep(1);
+     sleep(0.5);
 
 
 
@@ -362,9 +362,9 @@ void __fastcall TForm1::CheckBox2Click(TObject *Sender)
 {
 
      if (CheckBox1->Checked == true) CheckBox1->Checked = false;
-     sleep(1);
+     sleep(0.5);
      CheckBox2->Checked = true;
-     sleep(1);
+     sleep(0.5);
 
 
 }

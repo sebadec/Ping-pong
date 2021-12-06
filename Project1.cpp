@@ -10,19 +10,20 @@ WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
         try
         {
                  Application->Initialize();
-                 /*
-                 Witaj w grze PingPong.
+		 Application->MessageBox(
+                 "Witaj w grze PingPong."
+                 " \n"
+                 "Lewy gracz steruje wciskajac klawisze W oraz S.\n"
+                 "Prawy gracz steruje wciskajac strzalki do gory i w dol. \n"
+                 "Dla urozmaicenia zabawy: \n"
+                 "Kiedy odbijesz pilke na srodku paletki, pilka perzyspieszy,\n"
+                 "Kiedy odbijesz pilke na krawedziach paletki, pilka zmieni kat odbicia. \n"
+                 "Mozesz dowolnie zmieniac pole gry -> gra sie dostosuje.\n"
+                 " \n"
+                 "Milej zabawy!\n"
+                 " \n"
+                 , "Game made by Sebastian Dec", MB_OK);
 
-                 Lewy gracz steruje wciskaj¹c klawisze W oraz S.
-                 Prawy gracz steruje wciskaj¹c strze³ki do góry i w dó³.
-
-                 Dla urozmaicenia zabawy:
-                 Kiedy odbijesz pi³kê na srodku paletki, pi³ka perzyspieszy,
-                 Liedy odbijesz pi³kê na krawêdziach paletki, pi³ka zmieni k¹t odbicia.);
-                 Mo¿esz dowolnie zmieniac pole gry.
-
-                 Mi³ej zabawy!
-                 */
                  Application->CreateForm(__classid(TForm1), &Form1);
                  Application->Run();
         }

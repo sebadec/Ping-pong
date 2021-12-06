@@ -10,13 +10,20 @@ WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
         try
         {
                  Application->Initialize();
-                 /*
-                 Application->MessageBox("Witaj w grze w Pingponga!\nLewy gracz steruje paletk¹ za "
-                 "pomoc¹ klawiszy A (ruch paletki w górê) i Z (ruch paletki w dó³). "
-                 "Prawy gracz steruje strza³kami w górê i w dó³. Uwaga! "
-                 "Je¿eli pi³eczka uderzy w œrodek paletki, jej prêdkoœæ wzrasta! Dobrej zabawy!",
-                 "PINGO-PONGO", MB_OK | MB_ICONINFORMATION);
-                 */
+		 Application->MessageBox(
+                 "Witaj w grze PingPong."
+                 " \n"
+                 "Lewy gracz steruje wciskajac klawisze W oraz S.\n"
+                 "Prawy gracz steruje wciskajac strzalki do gory i w dol. \n"
+                 "Dla urozmaicenia zabawy: \n"
+                 "Kiedy odbijesz pilke na srodku paletki, pilka perzyspieszy,\n"
+                 "Liedy odbijesz pilke na krawedziach paletki, pilka zmieni kat odbicia. \n"
+                 "Mozesz dowolnie zmieniac pole gry -> gra sie dostosuje.\n"
+                 " \n"
+                 "Milej zabawy!\n"
+                 " \n"
+                 , "Game made by Sebastian Dec", MB_OK);
+
                  Application->CreateForm(__classid(TForm1), &Form1);
                  Application->Run();
         }
