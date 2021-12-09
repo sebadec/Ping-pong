@@ -29,10 +29,9 @@ __published:	// IDE-managed Components
         TLabel *Label3;
         TButton *Button2;
         TButton *Button3;
+        TGroupBox *GroupBox1;
         TRadioButton *RadioButton1;
         TRadioButton *RadioButton2;
-        TCheckBox *CheckBox1;
-        TCheckBox *CheckBox2;
         void __fastcall Timer_BallTimer(TObject *Sender);
         void __fastcall Paddle_Left_UpTimer(TObject *Sender);
         void __fastcall FormKeyDown(TObject *Sender, WORD &Key,
@@ -45,8 +44,8 @@ __published:	// IDE-managed Components
         void __fastcall Button1Click(TObject *Sender);
         void __fastcall Button2Click(TObject *Sender);
         void __fastcall Button3Click(TObject *Sender);
-        void __fastcall CheckBox1Click(TObject *Sender);
-        void __fastcall CheckBox2Click(TObject *Sender);
+        void __fastcall RadioButton1Click(TObject *Sender);
+        void __fastcall RadioButton2Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);
